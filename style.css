@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+/* ============ Three.js Canvas ============ */
+#three-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
 :root {
     --primary: #0071E3;
     --primary-dark: #0058B9;
@@ -47,6 +58,8 @@ ul {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 24px;
+    position: relative;
+    z-index: 1;
 }
 
 /* ============ Navigation ============ */
@@ -142,6 +155,8 @@ ul {
 
 /* ============ Hero ============ */
 .hero {
+    position: relative;
+    z-index: 1;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -262,6 +277,8 @@ ul {
 /* ============ Sections ============ */
 .section {
     padding: 80px 0;
+    position: relative;
+    z-index: 1;
 }
 
 .section-alt {
@@ -591,6 +608,9 @@ ul {
     border-top: 1px solid var(--border);
     color: var(--text-secondary);
     font-size: 0.85rem;
+    position: relative;
+    z-index: 1;
+    background: var(--bg);
 }
 
 /* ============ Animations ============ */
