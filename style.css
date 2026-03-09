@@ -547,6 +547,20 @@ ul {
     margin-bottom: 16px;
 }
 
+.app-store-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    transition: all var(--transition);
+}
+
+.app-store-link:hover {
+    color: var(--accent-teal);
+    transform: translateX(4px);
+}
+
 /* ============ Skills ============ */
 .skills-grid {
     display: grid;
