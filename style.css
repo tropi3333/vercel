@@ -525,6 +525,13 @@ ul {
     margin-bottom: 16px;
 }
 
+.app-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
 .project-card h3 {
     font-size: 1.15rem;
     font-weight: 600;
