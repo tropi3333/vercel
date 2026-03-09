@@ -17,23 +17,23 @@
 }
 
 :root {
-    --primary: #6C63FF;
-    --primary-dark: #5A52D5;
-    --accent: #00C7BE;
-    --accent-pink: #FF6B9D;
-    --bg: #0A0A0F;
-    --bg-alt: #0F0F1A;
+    --primary: #147EFB;
+    --primary-dark: #0D6ADB;
+    --accent: #F05138;
+    --accent-teal: #00C7BE;
+    --bg: #0D1117;
+    --bg-alt: #111820;
     --bg-card: rgba(255, 255, 255, 0.04);
     --bg-card-hover: rgba(255, 255, 255, 0.07);
-    --text: #E8E8ED;
-    --text-secondary: #8888A0;
+    --text: #E6EDF3;
+    --text-secondary: #7D8590;
     --border: rgba(255, 255, 255, 0.08);
-    --border-hover: rgba(108, 99, 255, 0.3);
+    --border-hover: rgba(20, 126, 251, 0.3);
     --radius: 16px;
     --radius-sm: 10px;
-    --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 8px 40px rgba(108, 99, 255, 0.15);
-    --glow: 0 0 30px rgba(108, 99, 255, 0.2);
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 40px rgba(20, 126, 251, 0.15);
+    --glow: 0 0 30px rgba(20, 126, 251, 0.2);
     --transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -93,7 +93,7 @@ ul {
 .nav-logo {
     font-weight: 700;
     font-size: 1.25rem;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background: linear-gradient(135deg, var(--primary), var(--accent-teal));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -235,23 +235,23 @@ ul {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary), #8B5CF6);
+    background: linear-gradient(135deg, var(--primary), var(--accent));
     color: white;
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 25px rgba(108, 99, 255, 0.4);
+    box-shadow: 0 4px 25px rgba(20, 126, 251, 0.4);
 }
 
 .btn-secondary {
     background: transparent;
     color: var(--primary);
-    border: 2px solid rgba(108, 99, 255, 0.4);
+    border: 2px solid rgba(20, 126, 251, 0.4);
 }
 
 .btn-secondary:hover {
-    background: rgba(108, 99, 255, 0.1);
+    background: rgba(20, 126, 251, 0.1);
     border-color: var(--primary);
     color: white;
     transform: translateY(-2px);
@@ -267,19 +267,19 @@ ul {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background: linear-gradient(135deg, var(--primary), var(--accent-teal));
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
-    box-shadow: 0 12px 50px rgba(108, 99, 255, 0.3), 0 0 80px rgba(0, 199, 190, 0.15);
+    box-shadow: 0 12px 50px rgba(20, 126, 251, 0.3), 0 0 80px rgba(0, 199, 190, 0.15);
     animation: badgePulse 4s ease-in-out infinite;
 }
 
 @keyframes badgePulse {
-    0%, 100% { box-shadow: 0 12px 50px rgba(108, 99, 255, 0.3), 0 0 80px rgba(0, 199, 190, 0.15); }
-    50% { box-shadow: 0 12px 60px rgba(108, 99, 255, 0.5), 0 0 100px rgba(0, 199, 190, 0.25); }
+    0%, 100% { box-shadow: 0 12px 50px rgba(20, 126, 251, 0.3), 0 0 80px rgba(0, 199, 190, 0.15); }
+    50% { box-shadow: 0 12px 60px rgba(20, 126, 251, 0.5), 0 0 100px rgba(0, 199, 190, 0.25); }
 }
 
 .hero-badge-years {
@@ -358,7 +358,7 @@ ul {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background: linear-gradient(135deg, var(--primary), var(--accent-teal));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -407,7 +407,7 @@ ul {
     background: var(--primary);
     border: 3px solid var(--bg-alt);
     z-index: 1;
-    box-shadow: 0 0 12px rgba(108, 99, 255, 0.4);
+    box-shadow: 0 0 12px rgba(20, 126, 251, 0.4);
 }
 
 .timeline-content {
@@ -441,7 +441,7 @@ ul {
 }
 
 .company {
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background: linear-gradient(135deg, var(--primary), var(--accent-teal));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -490,12 +490,12 @@ ul {
 
 .tech-tags span {
     padding: 4px 12px;
-    background: rgba(108, 99, 255, 0.1);
+    background: rgba(20, 126, 251, 0.1);
     color: var(--primary);
     border-radius: 50px;
     font-size: 0.8rem;
     font-weight: 500;
-    border: 1px solid rgba(108, 99, 255, 0.15);
+    border: 1px solid rgba(20, 126, 251, 0.15);
 }
 
 /* ============ Projects ============ */
@@ -537,6 +537,7 @@ ul {
     color: var(--accent);
     font-weight: 500;
     margin-bottom: 12px;
+    letter-spacing: 0.3px;
 }
 
 .project-card p:not(.project-type) {
@@ -591,10 +592,10 @@ ul {
 }
 
 .skill-items span:hover {
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background: linear-gradient(135deg, var(--primary), var(--accent-teal));
     color: white;
     border-color: transparent;
-    box-shadow: 0 0 15px rgba(108, 99, 255, 0.3);
+    box-shadow: 0 0 15px rgba(20, 126, 251, 0.3);
 }
 
 /* ============ Contact ============ */
@@ -648,7 +649,7 @@ ul {
 }
 
 .contact-card p {
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background: linear-gradient(135deg, var(--primary), var(--accent-teal));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
